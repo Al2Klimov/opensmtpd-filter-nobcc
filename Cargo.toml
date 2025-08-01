@@ -7,5 +7,4 @@ license = "GPL-3.0"
 authors = ["Alexander A. Klimov <a@kli.mov>"]
 
 [dependencies]
-itertools = "0.14.0"
 mail-parser = "0.10.2"
