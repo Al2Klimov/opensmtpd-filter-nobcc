@@ -1,10 +1,10 @@
 use mail_parser::Address;
 use std::io::{Result, Write};
 
-pub(crate) fn join_write_bytes<'a>(
+pub(crate) fn join_write_bytes(
     writer: &mut dyn Write,
     sep: &[u8],
-    mut parts: impl Iterator<Item = &'a [u8]>,
+    mut parts: impl Iterator<Item = &'_ [u8]>,
 ) -> Result<()> {
     match parts.next() {
         None => {}
